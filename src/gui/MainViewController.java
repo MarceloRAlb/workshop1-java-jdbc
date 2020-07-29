@@ -30,12 +30,12 @@ public class MainViewController implements Initializable{
 	private MenuItem menuItemAbout;
 	
 	@FXML
-	public void onMenuIremSellerAction() {
+	public void onMenuItemSellerAction() {
 		System.out.println("onMenuIremSellerAction");
 	}
 	
 	@FXML
-	public void onMenuIremDepartmentAction() {
+	public void onMenuItemDepartmentAction() {
 		loadView("/gui/DepartamentList.fxml", (DepartmentListController controller) -> {
 		      controller.setDepartmentService(new DepartmentService());
 		      controller.updateTableView();
@@ -43,7 +43,7 @@ public class MainViewController implements Initializable{
 	}
 	
 	@FXML
-	public void onMenuIremAboutAction() {
+	public void onMenuItemAboutAction() {
 		loadView("/gui/About.fxml", x ->{});
 	}
 	
